@@ -1,0 +1,10 @@
+library(dplyr)
+mydata<-read.csv('murders.csv')
+mydata
+dim(mydata)
+str(mydata)
+names(mydata)
+mysubdata<-select(mydata,state:population)
+mysubdata
+mysubdatas<-select(mydata,state,region)
+mysubdatas
